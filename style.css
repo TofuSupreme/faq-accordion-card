@@ -1,0 +1,18 @@
+/* Build for mobile first  */
+
+.container {
+  /* Add border to make it easy to adjust height/spacing of the FAQ card */
+  border: solid;
+}
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  text-align: center;
+}
+
+.faq-answer {
+  display: none;
+}
