@@ -1,18 +1,60 @@
 /* Build for mobile first  */
-
-.container {
-  /* Add border to make it easy to adjust height/spacing of the FAQ card */
-  border: solid;
+body {
+  background-image: linear-gradient(hsla(273, 75%, 66%, 1), hsl(240, 73%, 65%));
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
+.container {
+  /* Add solid border to make it easy to adjust height/spacing of the FAQ card */
+  border: solid;
+  border-radius: 20px;
+  width: 90%;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.offset-container {
+  position: relative;
+  top: -100px;
+}
+
+.FAQ-image {
+  position: relative;
+  text-align: center;
+}
+
+.img-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
 .faq-question {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
 }
-
 h1 {
   text-align: center;
 }
 
 .faq-answer {
   display: none;
+}
+
+.collapsible {
+  min-width: 42px;
+  min-height: 42px;
+  border: none;
+  background: none;
+}
+
+.divider {
+  width: 95%;
 }
